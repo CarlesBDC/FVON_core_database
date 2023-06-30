@@ -20,6 +20,6 @@ CREATE TABLE `CONTACTS` (
   `ZIP` varchar(10) COMMENT 'Postal code, 5 characters for USA and 6 for Canada',
   `ROLE` set('ACTIVE_SUPPORT','ACTIVE_INDUSTRY','ACTIVE_ADMIN','INACTIVE','DATA_USER') NOT NULL COMMENT 'A way of categorizing contacts',
   
-  PRIMARY KEY (`CONTACT_ID`)
+  PRIMARY KEY (`CONTACT_PK`)
   
 ) COMMENT='This table stores contact information for program participants and support staff';
