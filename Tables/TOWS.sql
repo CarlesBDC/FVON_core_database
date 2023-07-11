@@ -6,7 +6,7 @@
 * Purpose: Assigns each TOW to a VESSEL
 */  
 CREATE TABLE `TOWS`(
-  `TOW_ID` integer NOT NULL AUTO_INCREMENT COMMENT 'UID for this table',
+  `TOW_PK` integer NOT NULL AUTO_INCREMENT COMMENT 'UID for this table',
   `VESSEL_PK` integer NOT NULL COMMENT 'Ties tow or haul data to vessel table',
   
   PRIMARY KEY (`TOW_PK`),

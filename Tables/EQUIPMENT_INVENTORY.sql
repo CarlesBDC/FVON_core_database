@@ -25,6 +25,6 @@ CREATE TABLE `EQUIPMENT_INVENTORY` (
   PRIMARY KEY (`INVENTORY_PK`),
 
   CONSTRAINT fk_Custodian 
-    FOREIGN KEY (`CUSTODIAN`) 
+    FOREIGN KEY (`CONTACT_PK`)
       REFERENCES CONTACTS(CONTACT_PK)
 ) COMMENT='This table stores information regarding the current disposition of equipment managed by the program';

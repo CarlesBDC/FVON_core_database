@@ -20,7 +20,7 @@ CREATE TABLE `VESSEL_VISIT_LOG`(
   CONSTRAINT fk_VisitVesselPK
   FOREIGN KEY (`VESSEL_PK`) 
     REFERENCES VESSELS(VESSEL_PK),
-  CONSTRAINT fk_LeadTech
-  FOREIGN KEY (`LEAD_TECH`)
-    REFERENCES CONTACTS(CONTACT_ID)  
+  CONSTRAINT fk_ContactPK
+  FOREIGN KEY (`CONTACT_PK`)
+    REFERENCES CONTACTS(CONTACT_PK)
 ) COMMENT='This table records visits of technicians to ports to service or install new systems.';
