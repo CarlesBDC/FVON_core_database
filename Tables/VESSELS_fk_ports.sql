@@ -23,5 +23,5 @@ CREATE TABLE `VESSELS` (
   
   CONSTRAINT fk_Port
   FOREIGN KEY (`PORT_PK`) 
-    REFERENCES PORTS(PORTS_PK)
+    REFERENCES PORTS(PORT_PK)
 ) COMMENT='This table stores information about vessels involved in the program, who owns and operates them, where they are based, and what fisheries they participate in.';
